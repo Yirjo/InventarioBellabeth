@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventario de Bodys</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado con logo -->
+  <header>
+    <img src="logo.png" alt="Logo de la tienda" class="logo">
+    <h1>Inventario de Bodys</h1>
+  </header>
+
+  <!-- Formulario para agregar bodys -->
+  <form id="formBody">
+    <input type="text" id="nombre" placeholder="Referencia" required>
+    <input type="text" id="color" placeholder="Color" required>
+    <input type="number" id="cantidad" placeholder="Cantidad" required min="1">
+    <input type="file" id="foto" accept="image/*" required>
+    <button type="submit">Agregar Body</button>
+  </form>
+
+  <!-- Lista de inventario -->
+  <h2>Lista de Inventario</h2>
+  <div id="lista"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
